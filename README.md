@@ -1,6 +1,6 @@
-# rn-weblineindia-expandable-flatlist
+# React Native Expandable Flatlist Component
 
-A lightweight node module to expand/collapse text of any item in the flatlist in React-Native. 
+A lightweight node module to expand and collapse text of any item in the flatlist in React Native.
 
 ## Getting started
 
@@ -22,12 +22,28 @@ A lightweight node module to expand/collapse text of any item in the flatlist in
 
 ## Supported versions
 
-ReactNative 0.60 - 0.62.5 is supported for v1.0.0
+ReactNative 0.60 - 0.63 is supported for v1.0.1 of this module.
 
 ## Usage
 
 ```javascript
 import ExpandableFlatlist from 'rn-weblineindia-expandable-flatlist';
+
+//sample array
+const arrayList = [
+  {
+    id: 'one',
+    title: 'First Item',
+  },
+  {
+    id: 'two',
+    title: 'Second Item',
+  },
+  {
+    id: 'three',
+    title: 'Third Item',
+  },
+];
 
 <ExpandableFlatlist
   data={arrayList}        // arrayList is a list which wants display
@@ -61,18 +77,18 @@ renderViewLess = (onPress) => {
 
 | **Props**      | **Type**          | **Required**       | **Description**                                                               |
 |----------------|-------------------|--------------------|-------------------------------------------------------------------------------|
-| data           | `array`           | yes                | Array List to be displayed\. \(Required\)                                     |
-| numberOfLines  | `number`          | no                 | Number of lines to be displayed after that it will show option of Show more\. |
-| titleKey       | `string`          | no                 | Key which is used for title in the list\.                                     |
-| subTitleKey    | `string`          | no                 | Key which is used for subTitle in the list\.                                  |
-| descriptionKey | `string`          | no                 | Key which is used for description in the list\.                               |
-| dateKey        | `string`          | no                 | Key which is used for date in the list\.                                      |
-| viewStyle      | `[object, array]` | no                 | Styles is passed to the View for single item of flatlist\.                    |
-| titleStyle     | `[object, array]` | no                 | Styles is passed to the title\.                                               |
-| subTitleStyle  | `[object, array]` | no                 | Styles is passed to the sub title\.                                           |
-| textStyle      | `[object, array]` | no                 | Styles is passed to text\(description\)                                       |
-| dateStyle      | `[object, array]` | no                 | Styles is passed to the date\.                                                |
-| color          | `[object, array]` | no                 | Color to be displayed for \`More` and `Less`\.                                |
+| data           | `array`           | Yes                | Array List to be displayed\.                                     |
+| numberOfLines  | `number`          | Optional           | Number of lines to be displayed after that it will show option of Show more\. |
+| titleKey       | `string`          | Optional           | Key which is used for title in the list\.                                     |
+| subTitleKey    | `string`          | Optional           | Key which is used for subTitle in the list\.                                  |
+| descriptionKey | `string`          | Optional           | Key which is used for description in the list\.                               |
+| dateKey        | `string`          | Optional           | Key which is used for date in the list\.                                      |
+| viewStyle      | `[object, array]` | Optional           | Styles is passed to the View for single item of flatlist\.                    |
+| titleStyle     | `[object, array]` | Optional           | Styles is passed to the title\.                                               |
+| subTitleStyle  | `[object, array]` | Optional           | Styles is passed to the sub title\.                                           |
+| textStyle      | `[object, array]` | Optional           | Styles is passed to text\(description\)                                       |
+| dateStyle      | `[object, array]` | Optional           | Styles is passed to the date\.                                                |
+| color          | `[object, array]` | Optional           | Color to be displayed for \`More` and `Less`\.                                |
 
 ## Methods
 
@@ -95,7 +111,7 @@ renderViewLess = (onPress) => {
 
 ## Need Help? 
 
-We also provide a free, basic support for all users who want to use this ReactNative Banner View in their software project. In case you want to customize this Banner View to suit your development needs, then feel free to contact our [ReactNative developers](https://www.weblineindia.com/hire-react-native-developers.html).
+We also provide a free, basic support for all users who want to use this ReactNative Expandable Flatlist component in their software project. In case you want to customize this Expandable Flatlist component to suit your development needs, then feel free to contact our [ReactNative developers](https://www.weblineindia.com/hire-react-native-developers.html).
 
 -----
 

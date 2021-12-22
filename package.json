@@ -1,7 +1,7 @@
 {
   "name": "rn-weblineindia-expandable-flatlist",
   "title": "React Native Expandable Flatlist",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight node module to expand/collapse text of any item in the flatlist in React-Native. ",
   "main": "index.js",
   "files": [
@@ -9,6 +9,8 @@
     "android",
     "index.js",
     "ios",
+    "ExpandItemComponent.js",
+    "Styles.js",
     "rn-weblineindia-expandable-flatlist.podspec"
   ],
   "scripts": {
@@ -20,13 +22,13 @@
     "baseUrl": "https://github.com/weblineindia/React-Native-Expandable-Flatlist"
   },
   "keywords": [
-    "rn-weblineindia-expandable-flatlist", 
-    "react-native-expandable-flatlist", 
-    "expandable-flatlist", 
-    "expandable", 
-    "collapse", 
-    "viewmore", 
-    "viewless",  
+    "rn-weblineindia-expandable-flatlist",
+    "react-native-expandable-flatlist",
+    "expandable-flatlist",
+    "expandable",
+    "collapse",
+    "viewmore",
+    "viewless",
     "react-native"
   ],
   "author": {
@@ -37,11 +39,11 @@
   "homepage": "https://www.weblineindia.com/software-development-resources.html",
   "readmeFilename": "README.md",
   "peerDependencies": {
-    "react": "^16.8.1",
+    "react": "17.0.2",
     "react-native": ">=0.60.0-rc.0 <1.0.x"
   },
   "devDependencies": {
-    "react": "^16.9.0",
-    "react-native": "^0.61.5"
+    "react": "17.0.2",
+    "react-native": "0.66.3"
   }
 }

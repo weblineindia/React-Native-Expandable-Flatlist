@@ -6,6 +6,10 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E76BD5F44391FC9AB93C8D1D /* Pods_ExpandableFlatlist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD13AD75DD7503177CB9E36 /* Pods_ExpandableFlatlist.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,6 +24,9 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libExpandableFlatlist.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libExpandableFlatlist.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		25295F70241F57A7CDA953D1 /* Pods-ExpandableFlatlist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpandableFlatlist.debug.xcconfig"; path = "Target Support Files/Pods-ExpandableFlatlist/Pods-ExpandableFlatlist.debug.xcconfig"; sourceTree = "<group>"; };
+		8DD13AD75DD7503177CB9E36 /* Pods_ExpandableFlatlist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpandableFlatlist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD4224F0158B99C5F1B949DF /* Pods-ExpandableFlatlist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpandableFlatlist.release.xcconfig"; path = "Target Support Files/Pods-ExpandableFlatlist/Pods-ExpandableFlatlist.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E76BD5F44391FC9AB93C8D1D /* Pods_ExpandableFlatlist.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +53,27 @@
 			isa = PBXGroup;
 			children = (
 				134814211AA4EA7D00B7C361 /* Products */,
+				5A0C58617182012953B70591 /* Pods */,
+				7D212E6BA723D4B2575F04EE /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		5A0C58617182012953B70591 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25295F70241F57A7CDA953D1 /* Pods-ExpandableFlatlist.debug.xcconfig */,
+				DD4224F0158B99C5F1B949DF /* Pods-ExpandableFlatlist.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7D212E6BA723D4B2575F04EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DD13AD75DD7503177CB9E36 /* Pods_ExpandableFlatlist.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,6 +83,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "ExpandableFlatlist" */;
 			buildPhases = (
+				8D156BEBD96ECAC35B76664E /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -99,6 +128,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D156BEBD96ECAC35B76664E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExpandableFlatlist-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
@@ -224,6 +278,7 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25295F70241F57A7CDA953D1 /* Pods-ExpandableFlatlist.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -240,6 +295,7 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD4224F0158B99C5F1B949DF /* Pods-ExpandableFlatlist.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
