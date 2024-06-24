@@ -47,7 +47,7 @@
   "bugs": {
     "url": "https://github.com/weblineindia/React-Native-Expandable-Flatlist.git/issues"
   },
-  "homepage": "https://www.weblineindia.com/software-development-resources.html"
+  "homepage": "https://www.weblineindia.com/software-development-resources.html",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
