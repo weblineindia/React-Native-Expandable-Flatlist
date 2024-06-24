@@ -42,12 +42,12 @@
     "type": "git",
     "url": "git+https://github.com/weblineindia/React-Native-Expandable-Flatlist.git.git"
   },
-  "author": "rahulas <rahulas@webline.local> (https://github.com/weblineindia/React-Native-Expandable-Flatlist)",
+  "author": "Weblineindia <rahulas@webline.local> (https://github.com/weblineindia/React-Native-Expandable-Flatlist)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/weblineindia/React-Native-Expandable-Flatlist.git/issues"
   },
-  "homepage": "https://github.com/weblineindia/React-Native-Expandable-Flatlist.git#readme",
+  "homepage": "https://www.weblineindia.com/software-development-resources.html"
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
